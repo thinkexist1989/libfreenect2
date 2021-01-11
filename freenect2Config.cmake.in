@@ -5,8 +5,8 @@
 
 # Compute paths
 get_filename_component(freenect2_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
-set(freenect2_INCLUDE_DIR "@CONFIG_INCLUDE_DIRS@")
-SET(freenect2_INCLUDE_DIRS ${freenect2_INCLUDE_DIR})
+#set(freenect2_INCLUDE_DIR "@CONFIG_INCLUDE_DIRS@")
+#SET(freenect2_INCLUDE_DIRS ${freenect2_INCLUDE_DIR})
 
 # Our library dependencies (contains definitions for IMPORTED targets)
 include("${freenect2_CMAKE_DIR}/freenect2-targets.cmake")
@@ -20,4 +20,3 @@ FIND_PATH(freenect2_INCLUDE_DIR @PROJECT_NAME@/libfreenect2.hpp
 )
 SET(freenect2_INCLUDE_DIRS ${freenect2_INCLUDE_DIR})
 SET(freenect2_VERSION @PROJECT_VER@)
-
